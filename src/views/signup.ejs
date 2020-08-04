@@ -1,0 +1,80 @@
+<%- include ('partials/_header') %>
+<%- include ('partials/_navbar1') %>
+
+<div class="container">
+    <div class="container p-3 w-75">
+        <div class="card bg-light">
+            <div class="card-header text-center">
+                <h3>Registro</h3>
+            </div>
+            <div class="card-body">
+                <form action="/signup" method="POST">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress">Nombre(s)</label>
+                            <input type="text" class="form-control" name="name" placeholder="Nombre(s)" pattern="[A-Z a-z]+" autofocus required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputAddress2">Apellidos</label>
+                            <input type="text" class="form-control" name="lastname" placeholder="Apellidos" pattern="[A-Z a-z]+" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Usuario</label>
+                            <input type="text" class="form-control" name="username" placeholder="Usuario" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Contraseña</label>
+                            <input type="password" class="form-control" name="password" placeholder="Contraseña" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">E-mail</label>
+                            <input type="email" class="form-control" name="email" placeholder="ejemplo@dominio.com" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputCity">Nacionalidad</label>
+                            <input type="text" class="form-control" name="nationality" placeholder="Nacionalidad" required>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputZip">Teléfono (10 dígitos)</label>
+                            <input type="tel" class="form-control" name="tel" pattern="[0-9]{10}"
+                                placeholder="Teléfono (10 dígitos)" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputState">Sexo</label>
+                            <select name="gender" class="form-control" required>
+                                <option>Hombre</option>
+                                <option>Mujer</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">
+                        Registrarse
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <blockquote class="blockquote text-right">
+        <p class="mb-0">Se pasa sola.</p>
+        <footer class="blockquote-footer">Colin
+            <cite title="Source Title">
+                ESCOM
+            </cite>
+        </footer>
+    </blockquote>
+</div>
+
+<%- include ('partials/_footer') %>

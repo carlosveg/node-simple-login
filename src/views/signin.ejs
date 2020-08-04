@@ -1,0 +1,38 @@
+<%- include ('partials/_header') %>
+<%- include ('partials/_navbar1') %>
+
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center bg-light">
+                <div class="card-header">
+                    <h3>Iniciar Sesión</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/signin" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="username" placeholder="Usuario" class="form-control" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="password" placeholder="Contraseña" class="form-control">
+                        </div>
+                        <button class="btn btn-primary btn-block">
+                            Iniciar Sesión
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <blockquote class="blockquote text-right">
+        <p class="mb-0">Está bien fácil.</p>
+        <footer class="blockquote-footer">Colin
+            <cite title="Source Title">
+                ESCOM
+            </cite>
+        </footer>
+    </blockquote>
+</div>
+
+<%- include ('partials/_footer') %>
